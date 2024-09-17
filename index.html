@@ -4,34 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu perfil</title>
-    <link rel="stylesheet" href="./styles/styles.css">
+    <meta name="description" content="Página de estudos Fluency Future">
+    <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <!--Meta tags para redes sociais-->
+    <meta property="og:title" content="Fluency Future - Estudos">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Página de Estudos Fluency Future">
+    <meta property="og:image" content="https://reinaldo-alves.github.io/estudosfluencyfuture/images/logo.jpg">
+    <meta property="og:image:alt" content="Logo Fluency Academy">
+    <meta property="og:site_name" content="Fluency Future">
+    <meta property="og:url" content="https://reinaldo-alves.github.io/estudosfluencyfuture/">
 </head>
 <body>
-    <div class="container">
-        
-        <!--Seção superior-->
-        <div class="profile">
-            <div class="profile__header">
-                <img src="images/logo.jpg" alt="Logo Fluency Academy" width="200px" />
-                <h1>Fluency Academy</h1>
+    <div class="full-center-center">      
+        <!-- Caixa Branca -->
+        <div class="box">
+            
+            <!-- Avatar ou Imagem de Perfil -->
+            <div class="box__avatar">
+                <img src="images/avatar.png" alt="Avatar - Logo da Fluency" />
+            </div>
+
+            <!-- Área de Títulos de Descrições -->
+            <div class="box__header">
+                <h1>Fluency Future</h1>
                 <h2>Desbloqueie o seu futuro!</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, doloremque quaerat! Architecto facere quaerat qui harum, id voluptatibus amet est perferendis officia cupiditate nihil vel necessitatibus reiciendis, neque quam ullam?</p>
             </div>
 
-            <div class="profile__about">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, doloremque quaerat! Architecto facere quaerat qui harum, id voluptatibus amet est perferendis officia cupiditate nihil vel necessitatibus reiciendis, neque quam ullam?</p>       
+            <!-- Área de Conteúdo -->
+            <div class="box__content">
+                
+                <!-- Lista de Links -->
+                <ul class="link-list">
+                    <li>
+                        <a href="https://linkedin.com" target="_blank">
+                            <span><img src="./images/linkedin.svg" alt="Logo do Linkedin" /></span>
+                            <span>Linkedin</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com" target="_blank">
+                            <span><img src="./images/instagram.svg" alt="Logo do Instagram" /></span>
+                            <span>Instagram</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://fluencytv.io" target="_blank">
+                            <span><img src="./images/calender.svg" alt="Ícone de Calendário" /></span>
+                            <span>Matricule-se</span>
+                        </a>
+                    </li>
+                </ul>              
             </div>
-        </div>
 
-        <!--Seção de Links-->
-        <div class="links">
-            <ul>
-                <li><a href="#"><span class="emoji">&#8986;</span><span class="links__item">Instagram</span></a></li>
-                <li><a href="#"><span class="emoji">&#9924;</span><span class="links__item">Linkedin</span></a></li>
-                <li><a href="#"><span class="emoji">&#9989;</span><span class="links__item">Matricule-se</span></a></li>
-            </ul>
         </div>
     </div>
+
+    <!--Teste de botão like-->
+    <div class="like-button" role="button" aria-label="Curtir este conteúdo">Curtir</div>
     <hr>
     <div>
         <h2>Título Secundário</h2>
