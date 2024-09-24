@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu perfil</title>
     <meta name="description" content="Página de estudos Fluency Future">
-    <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/components.css">
+    <link rel="stylesheet" href="./styles/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <script src="./scripts/components.js" async></script>
     <!--Meta tags para redes sociais-->
     <meta property="og:title" content="Fluency Future - Estudos">
     <meta property="og:type" content="website">
@@ -20,9 +22,17 @@
     <meta property="og:url" content="https://reinaldo-alves.github.io/estudosfluencyfuture/">
 </head>
 <body>
-    <div class="full-center-center">      
+    <header class="main-header">
+        <div class="main-header__left">
+            <img src="./images/logo.png" alt="Logo Fluency Academy">
+        </div>
+        <div class="main-header__right">
+            <a href="" onclick="openModal('modal'); return false">Abrir a modal</a>
+        </div>
+    </header>
+    <div class="full-center-center full-center-center--margin-top">      
         <!-- Caixa Branca -->
-        <div class="box">
+        <div class="box box-avatar">
             
             <!-- Avatar ou Imagem de Perfil -->
             <div class="box__avatar">
@@ -38,35 +48,70 @@
 
             <!-- Área de Conteúdo -->
             <div class="box__content">
-                
-                <!-- Lista de Links -->
-                <ul class="link-list">
-                    <li>
-                        <a href="https://linkedin.com" target="_blank">
-                            <span><img src="./images/linkedin.svg" alt="Logo do Linkedin" /></span>
-                            <span>Linkedin</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://instagram.com" target="_blank">
-                            <span><img src="./images/instagram.svg" alt="Logo do Instagram" /></span>
-                            <span>Instagram</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://fluencytv.io" target="_blank">
-                            <span><img src="./images/calender.svg" alt="Ícone de Calendário" /></span>
-                            <span>Matricule-se</span>
-                        </a>
-                    </li>
-                </ul>              
+                <div class="view-more">
+                    <div class="view-more__content">
+                        <!-- Lista de Links -->
+                        <ul class="link-list">
+                            <li>
+                                <a href="https://linkedin.com" target="_blank">
+                                    <span><img src="./images/linkedin.svg" alt="Logo do Linkedin" /></span>
+                                    <span>Linkedin</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://instagram.com" target="_blank">
+                                    <span><img src="./images/instagram.svg" alt="Logo do Instagram" /></span>
+                                    <span>Instagram</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://fluencytv.io" target="_blank">
+                                    <span><img src="./images/plus-circle.svg" alt="Ícone de Mais" /></span>
+                                    <span>Mais conteúdo</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://cursos.fluencyacademy.io" target="_blank">
+                                    <span><img src="./images/calender.svg" alt="Ícone de Calendário" /></span>
+                                    <span>Matricule-se</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="view-more__actions">
+                        <button class="view-more-expand">Mostrar mais</button>
+                        <button class="view-more-collapse">Mostrar menos</button>
+                    </div>
+                </div>
+              
             </div>
 
         </div>
     </div>
+    <div class="full-center-center">
+        <div class="box">
+            <div class="box__title">
+                <img src="./images/question.jpg" alt="Emoji pensando">
+                <h2>Perguntas Frequentes</h2>
+            </div>
+            <details class="accordion" open>
+                <summary>Aqui vai a pergunta número um?</summary>
+                <p>Esse pode ser o texto final da resposta sobre <span class="tooltip">HTML<span class="tooltiptext">Hypertext Markup Language</span></span>. Ele pode ter uma, duas, três ou várias linhas. O importante é ser a resposta ideal da pergunta número um.</p>
+            </details>
+            <details class="accordion">
+                <summary>Aqui vai outra pergunta logo abaixo mas dessa vez será que cabe em mais linhas?</summary>
+                <p>Esse pode ser o texto final da resposta sobre <span class="tooltip">CSS<span class="tooltiptext">Cascading Style Sheets</span></span>. Ele pode ter uma, duas, três ou várias linhas. O importante é ser a resposta ideal da pergunta número um.</p>
+            </details>
+            <details class="accordion">
+                <summary>Aqui vai a pergunta número um?</summary>
+                <p>Esse pode ser o texto final da resposta sobre <span class="tooltip">JS<span class="tooltiptext">JavaScript</span></span>. Ele pode ter uma, duas, três ou várias linhas. O importante é ser a resposta ideal da pergunta número um.</p>
+            </details>
+        </div>
+    </div>
+    
 
     <!--Teste de botão like-->
-    <div class="like-button" role="button" aria-label="Curtir este conteúdo">Curtir</div>
+    <a href="./page.html"><div class="like-button" role="button" aria-label="Ir para script">Ir para página de teste do script</div></a>  
     <hr>
     <div>
         <h2>Título Secundário</h2>
@@ -76,6 +121,31 @@
     <div id="lista-itens">
         <h2>Minha lista</h2>
         <p class="subtitulo">Descrição da minha lista</p>
+    </div>
+    
+    <div class="container">
+        <h2>Tooltip</h2>
+        <div class="tooltip">Passe o cursor aqui<span class="tooltiptext">Texto da tooltip</span></div>
+    </div>
+
+    <div class="container">
+        <h2>Modal</h2>
+        <button class="modal-button" onclick="openModal('modal')">Open</button>
+    </div>
+
+    <div class="modal" id="modal" hidden>
+        <div class="modal__backdrop" onclick="closeModal('modal')"></div>
+        <div class="modal__content">
+            <div class="modal__content__header">
+                <h3>Olá, eu sou o componente modal</h3>
+            </div>
+            <div class="modal__content__body">
+                <p>Os modais concentram a atenção do usuário exclusivamente em uma tarefa ou informação por meio de uma janela que fica no topo do conteúdo da página. Busque ser objetivo e claro na informação</p>
+            </div>
+            <div class="modal__content__footer">
+                <button class="modal-button" onclick="closeModal('modal')">Fechar modal</button>
+            </div>
+        </div>
     </div>
 </body>
 </html>

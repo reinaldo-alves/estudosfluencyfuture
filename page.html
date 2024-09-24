@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu primeiro site - Página interna</title>
+    <title>Fluency Future - Javascript</title>
 </head>
 <body>
     <div id="bloco-conteudo1">
-        <h1>Página interna</h1>
+        <h1 id="titulo">Página interna</h1>
         <p class="subtitulo">Meu conteúdo. Testando meu <span style="color: blue;">primeiro site</span>. 
             <br>
             <a href="index.html">Link para Página inicial</a>
             <br>
             <a href="http://fluencytv.com" target="_blank">Link para FluencyTV</a>
         </p>       
-        <img src="images/logo.jpg" />
+        <img src="images/logo.png" />
     </div>
     <hr>
     <div>
@@ -24,12 +24,17 @@
     <hr>
     <div id="lista-itens">
         <h2>Minha lista</h2>
-        <p class="subtitulo">Descrição da minha lista</p>
+        <p class="subtitulo-sec">Descrição da minha lista</p>
         <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
+            <li class="item">Item 1</li>
+            <li class="item">Item 2</li>
+            <li class="item">Item 3</li>
         </ul>
     </div>
+    <form action="">
+        <input type="file" id="fileInput">
+        <button id="meuBotao" type="submit">Enviar</button>
+    </form>
+    <script src="main.js"></script>
 </body>
 </html>
